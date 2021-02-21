@@ -1,9 +1,9 @@
-defmodule Lab1.MixProject do
+defmodule Lab.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :lab1,
+      app: :lab,
       version: "0.1.0",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,7 @@ defmodule Lab1.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Lab1.Application, []}
+      mod: {Lab.Application, []}
     ]
   end
 
