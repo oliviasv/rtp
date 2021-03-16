@@ -8,8 +8,8 @@ defmodule Lab.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: Lab.Worker.start_link(arg)
-      # {Lab.Worker, arg}
+      id:   Connection,
+      start: {Connection, :function, ["localhost:4000/tweets/1"]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
