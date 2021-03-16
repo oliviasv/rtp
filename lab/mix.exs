@@ -15,16 +15,20 @@ defmodule Lab.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Lab.Application, []}
+      mod: {Lab.Application, []},
+      applications: [:httpoison]
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:eventsource_ex, "~> 0.0.2"}
+      {:eventsource_ex, "~> 0.0.2"},
+      {:httpoison, "~> 0.11.2"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
+
+
 end

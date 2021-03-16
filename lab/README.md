@@ -1,5 +1,9 @@
 # Lab
 
+### Run project
+```
+iex -S mix
+```
 **TODO: Add description**
 
 ## Installation
@@ -19,3 +23,8 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/lab](https://hexdocs.pm/lab).
 
+### run docker container
+
+```
+docker run -d -p 4000:4000 alexburlacu/rtp-server:faf18x
+```
